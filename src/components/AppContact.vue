@@ -38,7 +38,7 @@
             <div class="social-area">
               <div class="name">FIND WITH ME</div>
               <div class="social-icone">
-                <a href="#"><i data-feather="facebook"></i></a>
+                <a href="#"><i data-feather="mail"></i></a>
                 <a href="#"><i data-feather="linkedin"></i></a>
                 <a href="#"><i data-feather="instagram"></i></a>
               </div>
