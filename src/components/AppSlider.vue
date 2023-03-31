@@ -1,0 +1,66 @@
+<template>
+  <section
+    id="home"
+    class="slider-style-5 rn-section-gap pb--110 align-items-center with-particles bg_image"
+    style="background-image: url('src/assets/images/bg-cover.jpg')"
+    data-black-overlay="7"
+  >
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="banner-inner">
+            <div class="thumbnail gradient-border gradient-animation">
+              <img
+                id="border"
+                class="gradient-border"
+                src="@/assets/images/ishmam.jpeg"
+                alt=""
+              />
+            </div>
+            <h1 class="text-light">ISHMAM ABIR CHOWDHURY</h1>
+            <!-- type headline start-->
+            <span class="cd-headline clip is-full-width">
+              <span class="text-light">I am a &ensp;</span>
+              <!-- ROTATING TEXT -->
+              <span class="cd-words-wrapper">
+                <b class="is-visible"> Software Engineer.</b>
+                <b class="is-hidden"> Web Developer.</b>
+                <b class="is-hidden"> Photographer & Videographer.</b>
+              </span>
+            </span>
+            <!-- type headline end -->
+            <div class="col-lg-10 offset-lg-1 mt--60">
+              <p class="has-drop-cap" style="text-align: justify">
+                Basically I am A Bangladeshi Origin Full-time Web Developer and
+                A Software Engineer By Profession Who Is Living In Japan and
+                Also A Photographer & Video Editor By Choice. I am At A Time A
+                Hard Working And Super Lazy. I Can Sleep For 17 Hours Straight &
+                Also Can Code From 10:00 PM to 9:00 AM Continuously. My
+                Potential For You Depends On How You Want To Get It.
+              </p>
+            </div>
+            <div class="button-area">
+              <a class="rn-btn cv-download" href="#contacts"
+                ><span>Download CV</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+<script>
+export default {
+  name: "AppSlider",
+};
+</script>
+
+<style scoped>
+.cv-download {
+  box-shadow: 0px 0px 19px 20px rgba(33, 21, 21, 0.61) inset;
+  -webkit-box-shadow: 0px 0px 19px 20px rgba(33, 21, 21, 0.61) inset;
+  -moz-box-shadow: 0px 0px 19px 20px rgba(33, 21, 21, 0.61) inset;
+}
+</style>
