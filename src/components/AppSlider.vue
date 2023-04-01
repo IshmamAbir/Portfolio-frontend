@@ -18,15 +18,25 @@
                 alt=""
               />
             </div>
-            <h1 class="text-light">ISHMAM ABIR CHOWDHURY</h1>
+            <!-- TODO:// Name from DB -->
+            <h1 class="text-light">{{ fullName }}</h1>
             <!-- type headline start-->
             <span class="cd-headline clip is-full-width">
               <span class="text-light">I am a &ensp;</span>
               <!-- ROTATING TEXT -->
-              <span class="cd-words-wrapper">
-                <b class="is-visible"> Software Engineer.</b>
+              <!-- <span class="cd-words-wrapper"> -->
+              <span>
+                <!-- <div v-for="(value, key) in rotatingText" :key="key">
+                  <b :class="value"> {{ key }}.</b>
+                  1
+                </div> -->
+                <!-- <b class="is-visible"> Software Engineer.</b>
                 <b class="is-hidden"> Web Developer.</b>
                 <b class="is-hidden"> Photographer & Videographer.</b>
+                <b class="is-hidden"> Fighter.</b> -->
+                <Typed :options="typingText">
+                  <div class="typing text-danger"></div>
+                </Typed>
               </span>
             </span>
             <!-- type headline end -->
@@ -52,15 +62,34 @@
   </section>
 </template>
 <script>
+import { Typed } from "@duskmoon/vue3-typed-js";
+
 export default {
   name: "AppSlider",
+  components: {
+    Typed,
+  },
+  data() {
+    return {
+      fullName: "ISHMAM ABIR CHOWDHURY",
+      typingText: {
+        strings: [
+          "Software Engineer",
+          "Web Developer",
+          "Photographer ",
+          "Videographer",
+        ],
+        loop: true,
+        typeSpeed: 35,
+        smartBackspace: true,
+        shuffle: true,
+        showCursor: false,
+        backSpeed: 35,
+        autoInsertCss: true,
+      },
+    };
+  },
 };
 </script>
 
-<style scoped>
-.cv-download {
-  box-shadow: 0px 0px 19px 20px rgba(33, 21, 21, 0.61) inset;
-  -webkit-box-shadow: 0px 0px 19px 20px rgba(33, 21, 21, 0.61) inset;
-  -moz-box-shadow: 0px 0px 19px 20px rgba(33, 21, 21, 0.61) inset;
-}
-</style>
+<style scoped></style>
