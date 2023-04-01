@@ -1,6 +1,6 @@
 <template>
   <!-- start Header area -->
-  <div class="d-none d-xl-block header-style-2">
+  <div class="d-none d-lg-block header-style-2">
     <header
       class="rn-header-area d-flex align-items-start flex-column left-header-style"
     >
@@ -111,7 +111,7 @@
   <!-- start Header area end -->
 
   <!-- Header Mobile Bar  -->
-  <div class="header-style-2 d-block d-xl-none">
+  <div class="header-style-2 d-block d-lg-none">
     <div class="row align-items-center">
       <div class="col-6">
         <div class="logo">
@@ -149,7 +149,8 @@
           </div>
         </div>
         <p class="discription">
-          Personal Portfolio Website of Ishmam Abir Chowdhury.
+          You are free to know about me. Check everything that you need to know
+          and also feel free to ask questions ! Adios!
         </p>
       </div>
       <div class="content">
@@ -259,5 +260,17 @@
 <script>
 export default {
   name: "AppHeader",
+  data() {
+    return {
+      socialIcons: [
+        { class: "", href: "", icon: "" },
+        { class: "", href: "", icon: "" },
+        { class: "", href: "", icon: "" },
+        { class: "", href: "", icon: "" },
+        { class: "", href: "", icon: "" },
+        { class: "", href: "", icon: "" },
+      ],
+    };
+  },
 };
 </script>
