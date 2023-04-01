@@ -109,6 +109,7 @@
 export default {
   name: "SingleBlog",
   mounted() {
+    // eslint-disable-next-line no-undef
     feather.replace();
   },
 };
