@@ -73,151 +73,32 @@
               <div class="personal-experience-inner mt--40">
                 <div class="row">
                   <!-- Start Skill List Area  -->
-                  <div class="col-lg-6 col-md-12 col-12">
+                  <div class="col-lg-7 col-md-12 col-12">
                     <div class="content">
-                      <span class="subtitle">2007 - 2010</span>
+                      <!-- <span class="subtitle">2007 - 2010</span> -->
                       <h4 class="maintitle">Education Quality</h4>
-                      <div class="experience-list">
+                      <div
+                        class="experience-list"
+                        v-for="item in timeline"
+                        :key="item.id"
+                      >
                         <!-- Start Single List  -->
                         <div class="resume-single-list">
                           <div class="inner">
                             <div class="heading">
                               <div class="title">
-                                <h4>Personal Portfolio April Fools</h4>
-                                <span>University of DVI (1997 - 2001)</span>
+                                <h4>{{ item.jobTitle }}</h4>
+                                <span>{{ item.companyName }}</span>
                               </div>
                               <div class="date-of-time">
-                                <span>4.30/5</span>
-                              </div>
-                            </div>
-                            <p class="description">
-                              The education should be very interactual. Ut
-                              tincidunt est ac dolor aliquam sodales. Phasellus
-                              sed mauris hendrerit, laoreet sem in, lobortis
-                              mauris hendrerit ante.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End Single List  -->
-
-                        <!-- Start Single List  -->
-                        <div class="resume-single-list">
-                          <div class="inner">
-                            <div class="heading">
-                              <div class="title">
-                                <h4>Examples Of Personal Portfolio</h4>
-                                <span>College of Studies (2000 - 2002)</span>
-                              </div>
-                              <div class="date-of-time">
-                                <span>4.50/5</span>
-                              </div>
-                            </div>
-                            <p class="description">
-                              Maecenas finibus nec sem ut imperdiet. Ut
-                              tincidunt est ac dolor aliquam sodales. Phasellus
-                              sed mauris hendrerit, laoreet sem in, lobortis
-                              mauris hendrerit ante.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End Single List  -->
-
-                        <!-- Start Single List  -->
-                        <div class="resume-single-list">
-                          <div class="inner">
-                            <div class="heading">
-                              <div class="title">
-                                <h4>Tips For Personal Portfolio</h4>
-                                <span>University of Studies (1997 - 2001)</span>
-                              </div>
-                              <div class="date-of-time">
-                                <span>4.80/5</span>
-                              </div>
-                            </div>
-                            <p class="description">
-                              If you are going to use a passage. Ut tincidunt
-                              est ac dolor aliquam sodales. Phasellus sed mauris
-                              hendrerit, laoreet sem in, lobortis mauris
-                              hendrerit ante.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End Single List  -->
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Skill List Area  -->
-
-                  <!-- Start Skill List Area 2nd  -->
-                  <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
-                    <div class="content">
-                      <span class="subtitle">2007 - 2010</span>
-                      <h4 class="maintitle">Job Experience</h4>
-                      <div class="experience-list">
-                        <!-- Start Single List  -->
-                        <div class="resume-single-list">
-                          <div class="inner">
-                            <div class="heading">
-                              <div class="title">
-                                <h4>Diploma in Web Development</h4>
-                                <span>BSE In CSE (2004 - 2008)</span>
-                              </div>
-                              <div class="date-of-time">
-                                <span>4.70/5</span>
-                              </div>
-                            </div>
-                            <p class="description">
-                              Contrary to popular belief. Ut tincidunt est ac
-                              dolor aliquam sodales. Phasellus sed mauris
-                              hendrerit, laoreet sem in, lobortis mauris
-                              hendrerit ante.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End Single List  -->
-
-                        <!-- Start Single List  -->
-                        <div class="resume-single-list">
-                          <div class="inner">
-                            <div class="heading">
-                              <div class="title">
-                                <h4>The Personal Portfolio Mystery</h4>
-                                <span>Job at Rainbow-Themes (2008 - 2016)</span>
-                              </div>
-                              <div class="date-of-time">
-                                <span>4.95/5</span>
-                              </div>
-                            </div>
-                            <p class="description">
-                              Generate Lorem Ipsum which looks. Ut tincidunt est
-                              ac dolor aliquam sodales. Phasellus sed mauris
-                              hendrerit, laoreet sem in, lobortis mauris
-                              hendrerit ante.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End Single List  -->
-
-                        <!-- Start Single List  -->
-                        <div class="resume-single-list">
-                          <div class="inner">
-                            <div class="heading">
-                              <div class="title">
-                                <h4>Diploma in Computer Science</h4>
                                 <span
-                                  >Works at Plugin Development (2016 -
-                                  2020)</span
+                                  >{{ item.startTime }} -
+                                  {{ item.endTime }}</span
                                 >
                               </div>
-                              <div class="date-of-time">
-                                <span>5.00/5</span>
-                              </div>
                             </div>
                             <p class="description">
-                              Maecenas finibus nec sem ut imperdiet. Ut
-                              tincidunt est ac dolor aliquam sodales. Phasellus
-                              sed mauris hendrerit, laoreet sem in, lobortis
-                              mauris hendrerit ante.
+                              {{ item.jobDescription }}
                             </p>
                           </div>
                         </div>
@@ -473,152 +354,33 @@
             >
               <div class="personal-experience-inner mt--40">
                 <div class="row">
-                  <!-- Start Skill List Area  -->
-                  <div class="col-lg-6 col-md-12 col-12">
-                    <div class="content">
-                      <span class="subtitle">2007 - 2010</span>
-                      <h4 class="maintitle">Education Quality</h4>
-                      <div class="experience-list">
-                        <!-- Start Single List  -->
-                        <div class="resume-single-list">
-                          <div class="inner">
-                            <div class="heading">
-                              <div class="title">
-                                <h4>Personal Portfolio April Fools</h4>
-                                <span>University of DVI (1997 - 2001)</span>
-                              </div>
-                              <div class="date-of-time">
-                                <span>4.30/5</span>
-                              </div>
-                            </div>
-                            <p class="description">
-                              The education should be very interactual. Ut
-                              tincidunt est ac dolor aliquam sodales. Phasellus
-                              sed mauris hendrerit, laoreet sem in, lobortis
-                              mauris hendrerit ante.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End Single List  -->
-
-                        <!-- Start Single List  -->
-                        <div class="resume-single-list">
-                          <div class="inner">
-                            <div class="heading">
-                              <div class="title">
-                                <h4>Examples Of Personal Portfolio</h4>
-                                <span>College of Studies (2000 - 2002)</span>
-                              </div>
-                              <div class="date-of-time">
-                                <span>4.50/5</span>
-                              </div>
-                            </div>
-                            <p class="description">
-                              Maecenas finibus nec sem ut imperdiet. Ut
-                              tincidunt est ac dolor aliquam sodales. Phasellus
-                              sed mauris hendrerit, laoreet sem in, lobortis
-                              mauris hendrerit ante.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End Single List  -->
-
-                        <!-- Start Single List  -->
-                        <div class="resume-single-list">
-                          <div class="inner">
-                            <div class="heading">
-                              <div class="title">
-                                <h4>Tips For Personal Portfolio</h4>
-                                <span>University of Studies (1997 - 2001)</span>
-                              </div>
-                              <div class="date-of-time">
-                                <span>4.80/5</span>
-                              </div>
-                            </div>
-                            <p class="description">
-                              If you are going to use a passage. Ut tincidunt
-                              est ac dolor aliquam sodales. Phasellus sed mauris
-                              hendrerit, laoreet sem in, lobortis mauris
-                              hendrerit ante.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End Single List  -->
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Skill List Area  -->
-
                   <!-- Start Skill List Area 2nd  -->
-                  <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
+                  <div class="col-lg-8 col-md-12 col-12 mt_md--60 mt_sm--60">
                     <div class="content">
-                      <span class="subtitle">2007 - 2010</span>
+                      <!-- <span class="subtitle">2007 - 2010</span> -->
                       <h4 class="maintitle">Job Experience</h4>
-                      <div class="experience-list">
+                      <div
+                        class="experience-list"
+                        v-for="item in timeline"
+                        :key="item.id"
+                      >
                         <!-- Start Single List  -->
                         <div class="resume-single-list">
                           <div class="inner">
                             <div class="heading">
                               <div class="title">
-                                <h4>Diploma in Web Development</h4>
-                                <span>BSE In CSE (2004 - 2008)</span>
+                                <h4>{{ item.jobTitle }}</h4>
+                                <span>{{ item.companyName }}</span>
                               </div>
                               <div class="date-of-time">
-                                <span>4.70/5</span>
-                              </div>
-                            </div>
-                            <p class="description">
-                              Contrary to popular belief. Ut tincidunt est ac
-                              dolor aliquam sodales. Phasellus sed mauris
-                              hendrerit, laoreet sem in, lobortis mauris
-                              hendrerit ante.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End Single List  -->
-
-                        <!-- Start Single List  -->
-                        <div class="resume-single-list">
-                          <div class="inner">
-                            <div class="heading">
-                              <div class="title">
-                                <h4>The Personal Portfolio Mystery</h4>
-                                <span>Job at Rainbow-Themes (2008 - 2016)</span>
-                              </div>
-                              <div class="date-of-time">
-                                <span>4.95/5</span>
-                              </div>
-                            </div>
-                            <p class="description">
-                              Generate Lorem Ipsum which looks. Ut tincidunt est
-                              ac dolor aliquam sodales. Phasellus sed mauris
-                              hendrerit, laoreet sem in, lobortis mauris
-                              hendrerit ante.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End Single List  -->
-
-                        <!-- Start Single List  -->
-                        <div class="resume-single-list">
-                          <div class="inner">
-                            <div class="heading">
-                              <div class="title">
-                                <h4>Diploma in Computer Science</h4>
                                 <span
-                                  >Works at Plugin Development (2016 -
-                                  2020)</span
+                                  >{{ item.startTime }} -
+                                  {{ item.endTime }}</span
                                 >
                               </div>
-                              <div class="date-of-time">
-                                <span>5.00/5</span>
-                              </div>
                             </div>
                             <p class="description">
-                              Maecenas finibus nec sem ut imperdiet. Ut
-                              tincidunt est ac dolor aliquam sodales. Phasellus
-                              sed mauris hendrerit, laoreet sem in, lobortis
-                              mauris hendrerit ante.
+                              {{ item.jobDescription }}
                             </p>
                           </div>
                         </div>
@@ -845,5 +607,29 @@
 <script>
 export default {
   name: "AppResume",
+  data() {
+    return {
+      timeline: [
+        {
+          id: 1,
+          jobTitle: "xyz title",
+          companyName: "Abc Company",
+          startTime: "Jan 2023",
+          endTime: "Apr 2023",
+          jobDescription:
+            "iohnroegjrogjrgs wsetws sgd fdhdg fgpjm nosim abir ishmam roh afnan alamgir chowdhury tght htksr.",
+        },
+        {
+          id: 2,
+          jobTitle: "Associate Software Engineer",
+          companyName: "C Company",
+          startTime: "Dec 2010",
+          endTime: "Apr 2020",
+          jobDescription:
+            "gnan ir chowdhury random tupminrg etom abc install the software kop coop maxvalue mcdonalds iftar tght htksr.",
+        },
+      ],
+    };
+  },
 };
 </script>
